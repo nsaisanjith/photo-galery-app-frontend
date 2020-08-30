@@ -1,0 +1,25 @@
+.loginform {
+    text-align: center;
+    margin: 30px 600px;
+    border: 6px solid rgba(28, 110, 164, 0.7);
+    border-radius: 40px 40px 40px 40px;
+}
+
+form {
+    margin: 60px;
+    margin-top: 15px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0px;
+    font-family: arial;
+
+}
+
+button {
+    margin: 8px;
+    width: auto;
+    padding: 2px;
+
+}
