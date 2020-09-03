@@ -5,13 +5,11 @@ import classes from "../css/title.module.css";
 const Navbar = () => {
   return (
     <nav className={classes.Navbar}>
-      <NavLink
-        className={classes.NavLink}
-        to="/login"
-        activeStyle={{
-          fontWeight: "bold",
-          color: "red",
-        }}>
+      <NavLink className={classes.NavLink} to="/">
+        Home
+      </NavLink>
+
+      <NavLink className={classes.NavLink} to="/login">
         Login
       </NavLink>
     </nav>

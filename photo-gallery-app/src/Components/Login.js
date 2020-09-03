@@ -63,6 +63,8 @@ class Login extends React.Component {
       };
       const res = await axios.post("http://localhost:3200/users/login", data);
       if (res.status === 200) {
+        localStorage.setItem("token", res.data.token);
+        localStorage.setItem("user", JSON.stringify(res.data));
         this.props.history.push("/image");
       }
     } catch (error) {
@@ -81,9 +83,12 @@ class Login extends React.Component {
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <div className={classes.paper}>
-          <Typography component="h1" variant="h5">
-            Sign in
-          </Typography>
+          <div style={{ textAlign: "center", marginTop: 50 }}>
+            <Typography component="h1" variant="h5" style={{ fontSize: 30 }}>
+              Sign in
+            </Typography>
+          </div>
+          <br />
           <form
             className={classes.form}
             noValidate
@@ -122,14 +127,12 @@ class Login extends React.Component {
               className={classes.submit}>
               Sign In
             </Button>
+            <br />
+            <br />
             <Grid container>
-              <Grid item xs>
-                <Link href="#" variant="body2">
-                  Forgot password?
-                </Link>
-              </Grid>
+              <Grid item xs />
               <Grid item>
-                <Link href="#" variant="body2">
+                <Link href="/signup" variant="body2">
                   {"Don't have an account? Sign Up"}
                 </Link>
               </Grid>

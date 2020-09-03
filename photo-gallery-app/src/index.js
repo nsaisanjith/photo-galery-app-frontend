@@ -6,8 +6,8 @@ import Login from "./Components/Login";
 import Header from "./functional-components/Header";
 import Navbar from "./functional-components/nav";
 import Footer from "./functional-components/Footer";
-import ImageComp from "./Components/ImageComp";
-
+import ImagePageComp from "./Components/ImagePageComp";
+import SignupComp from "./Components/SignupComp";
 const route = (
   <BrowserRouter>
     <div>
@@ -15,8 +15,9 @@ const route = (
       <Navbar />
       <Switch>
         <Route path="/" component={App} exact={true} />
-        <Route path="/login" component={Login} />
-        <Route path="/image" component={ImageComp} />
+        <Route path="/login" component={Login} exact={true} />
+        <Route path="/image" component={ImagePageComp} exact={true} />
+        <Route path="/signup" component={SignupComp} exact={true} />
       </Switch>
       <Footer />
     </div>

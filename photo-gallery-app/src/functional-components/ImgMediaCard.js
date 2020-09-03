@@ -1,59 +1,39 @@
 import React from "react";
-import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
-
-const styles = {
-  root: {
-    maxWidth: 345,
-    width: 300,
-  },
-  media: {
-    height: 140,
-    paddingTop: "56.25%", // 16:9,
-    marginTop: "30",
-  },
-  Div: {
-    margin: 20,
-    padding: 8,
-    display: "inline-block",
-  },
-};
+import {
+  MDBBtn,
+  MDBCard,
+  MDBCardBody,
+  MDBCardImage,
+  MDBCardTitle,
+  MDBCardText,
+  MDBCol,
+} from "mdbreact";
+import "@fortawesome/fontawesome-free/css/all.min.scoped.css";
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "mdbreact/dist/css/mdb.css";
 
 export default function ImgMediaCard(props) {
   return (
-    <div style={styles.Div}>
-      <Card style={styles.root}>
-        <CardActionArea onClick={props.popup}>
-          <CardMedia
-            image={props.src}
-            title="Contemplative Reptile"
-            style={styles.media}
-          />{" "}
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              {" "}
-              {props.location}{" "}
-            </Typography>{" "}
-            <Typography variant="body2" color="textSecondary" component="p">
-              {" "}
-              {props.message}{" "}
-            </Typography>{" "}
-          </CardContent>{" "}
-        </CardActionArea>{" "}
-        <CardActions>
-          <Button size="small" color="primary" onClick={props.showEditPopUp}>
-            Edit{" "}
-          </Button>{" "}
-          <Button size="small" color="primary" onClick={props.requestOnDelete}>
-            Delete{" "}
-          </Button>{" "}
-        </CardActions>{" "}
-      </Card>
+    <div
+      style={{
+        padding: "10px",
+        width: 300,
+        margin: 20,
+        display: "inline-block",
+      }}>
+      <MDBCol>
+        <MDBCard style={{ width: "300px" }}>
+          <div onClick={props.popup}>
+            <MDBCardImage className="img-fluid" src={props.src} hover />
+          </div>
+          <MDBCardBody>
+            <MDBCardTitle>{props.location}</MDBCardTitle>
+            <MDBCardText>{props.message}</MDBCardText>
+            <MDBBtn onClick={props.showEditPopUp}>Edit</MDBBtn>
+            <MDBBtn onClick={props.requestOnDelete}>Delete</MDBBtn>
+          </MDBCardBody>
+        </MDBCard>
+      </MDBCol>
     </div>
   );
 }
