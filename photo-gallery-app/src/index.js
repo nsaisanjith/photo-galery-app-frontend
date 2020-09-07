@@ -4,7 +4,6 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import App from "./Components/app";
 import Login from "./Components/Login";
 import Header from "./functional-components/Header";
-import Navbar from "./functional-components/nav";
 import Footer from "./functional-components/Footer";
 import ImagePageComp from "./Components/ImagePageComp";
 import SignupComp from "./Components/SignupComp";
@@ -12,7 +11,6 @@ const route = (
   <BrowserRouter>
     <div>
       <Header head={"Photo-Gallery App"} />
-      <Navbar />
       <Switch>
         <Route path="/" component={App} exact={true} />
         <Route path="/login" component={Login} exact={true} />

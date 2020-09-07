@@ -7,6 +7,7 @@ import Checkbox from "@material-ui/core/Checkbox";
 import Link from "@material-ui/core/Link";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
+import Navbar from "../functional-components/nav"
 //import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
@@ -80,6 +81,8 @@ class Login extends React.Component {
   render() {
     const classes = this.useStyles;
     return (
+      <div>
+      <Navbar />
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <div className={classes.paper}>
@@ -143,6 +146,7 @@ class Login extends React.Component {
           <Copyright />
         </Box>
       </Container>
+      </div>
     );
   }
 }

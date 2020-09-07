@@ -149,6 +149,7 @@ export class ImageComp extends Component {
                   popup={() => this.popImage(im)}
                   requestOnDelete={() => this.requestOnDelete(indexOf, im)}
                   showEditPopUp={() => this.showEditPopUp(im, indexOf)}
+                  base64={"data:image/png;base64," + encode(im.image.data)}
                 />
               );
             })

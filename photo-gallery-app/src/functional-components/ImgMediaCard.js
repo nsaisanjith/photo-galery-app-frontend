@@ -1,4 +1,5 @@
 import React from "react";
+import Base64Downloader from "react-base64-downloader";
 import {
   MDBBtn,
   MDBCard,
@@ -31,6 +32,9 @@ export default function ImgMediaCard(props) {
             <MDBCardText>{props.message}</MDBCardText>
             <MDBBtn onClick={props.showEditPopUp}>Edit</MDBBtn>
             <MDBBtn onClick={props.requestOnDelete}>Delete</MDBBtn>
+            <Base64Downloader base64={props.base64} downloadName="images">
+              download
+            </Base64Downloader>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>

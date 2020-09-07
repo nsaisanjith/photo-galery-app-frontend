@@ -6,6 +6,14 @@ import axios from "axios";
 import MyProfile from "../functional-components/MyProfile";
 import { withRouter } from "react-router-dom";
 class ImagePageComp extends React.Component {
+  constructor(props) {
+    super(props);
+    if (!localStorage.getItem("token")) {
+      alert("please signin");
+      this.props.history.push("/login");
+      window.location.reload(false);
+    }
+  }
   state = {
     AddImageForm: false,
     image: undefined,
