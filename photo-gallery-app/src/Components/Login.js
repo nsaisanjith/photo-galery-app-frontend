@@ -7,7 +7,7 @@ import Checkbox from "@material-ui/core/Checkbox";
 import Link from "@material-ui/core/Link";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
-import Navbar from "../functional-components/nav"
+import Navbar from "./nav";
 //import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
@@ -82,70 +82,70 @@ class Login extends React.Component {
     const classes = this.useStyles;
     return (
       <div>
-      <Navbar />
-      <Container component="main" maxWidth="xs">
-        <CssBaseline />
-        <div className={classes.paper}>
-          <div style={{ textAlign: "center", marginTop: 50 }}>
-            <Typography component="h1" variant="h5" style={{ fontSize: 30 }}>
-              Sign in
-            </Typography>
-          </div>
-          <br />
-          <form
-            className={classes.form}
-            noValidate
-            onSubmit={this.handleOnSubmit}>
-            <TextField
-              variant="outlined"
-              margin="normal"
-              required
-              fullWidth
-              id="email"
-              label="Email Address"
-              name="email"
-              autoComplete="email"
-              autoFocus
-            />
-            <TextField
-              variant="outlined"
-              margin="normal"
-              required
-              fullWidth
-              name="password"
-              label="Password"
-              type="password"
-              id="password"
-              autoComplete="current-password"
-            />
-            <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
-              label="Remember me"
-            />
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              color="primary"
-              className={classes.submit}>
-              Sign In
-            </Button>
+        <Navbar />
+        <Container component="main" maxWidth="xs">
+          <CssBaseline />
+          <div className={classes.paper}>
+            <div style={{ textAlign: "center", marginTop: 50 }}>
+              <Typography component="h1" variant="h5" style={{ fontSize: 30 }}>
+                Sign in
+              </Typography>
+            </div>
             <br />
-            <br />
-            <Grid container>
-              <Grid item xs />
-              <Grid item>
-                <Link href="/signup" variant="body2">
-                  {"Don't have an account? Sign Up"}
-                </Link>
+            <form
+              className={classes.form}
+              noValidate
+              onSubmit={this.handleOnSubmit}>
+              <TextField
+                variant="outlined"
+                margin="normal"
+                required
+                fullWidth
+                id="email"
+                label="Email Address"
+                name="email"
+                autoComplete="email"
+                autoFocus
+              />
+              <TextField
+                variant="outlined"
+                margin="normal"
+                required
+                fullWidth
+                name="password"
+                label="Password"
+                type="password"
+                id="password"
+                autoComplete="current-password"
+              />
+              <FormControlLabel
+                control={<Checkbox value="remember" color="primary" />}
+                label="Remember me"
+              />
+              <Button
+                type="submit"
+                fullWidth
+                variant="contained"
+                color="primary"
+                className={classes.submit}>
+                Sign In
+              </Button>
+              <br />
+              <br />
+              <Grid container>
+                <Grid item xs />
+                <Grid item>
+                  <Link href="/signup" variant="body2">
+                    {"Don't have an account? Sign Up"}
+                  </Link>
+                </Grid>
               </Grid>
-            </Grid>
-          </form>
-        </div>
-        <Box mt={8}>
-          <Copyright />
-        </Box>
-      </Container>
+            </form>
+          </div>
+          <Box mt={8}>
+            <Copyright />
+          </Box>
+        </Container>
       </div>
     );
   }

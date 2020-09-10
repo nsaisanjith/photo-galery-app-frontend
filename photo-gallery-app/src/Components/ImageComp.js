@@ -11,7 +11,6 @@ export class ImageComp extends Component {
     super(props);
     this.request();
   }
-
   state = {
     visible: false,
     data: undefined,

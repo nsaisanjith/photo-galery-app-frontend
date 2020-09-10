@@ -10,6 +10,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import axios from "axios";
 import { withRouter } from "react-router-dom";
+import Navbar from "./nav";
 class SignupComp extends Component {
   useStyles = makeStyles((theme) => ({
     paper: {
@@ -61,99 +62,105 @@ class SignupComp extends Component {
   render() {
     const classes = this.useStyles;
     return (
-      <div style={{ marginTop: 50 }}>
-        <Container component="main" maxWidth="xs">
-          <CssBaseline />
-          <div className={classes.paper}>
-            <div style={{ textAlign: "center" }}>
-              <Typography component="h1" variant="h5" style={{ fontSize: 40 }}>
-                Sign up
-              </Typography>
-            </div>
-            <br />
-            <form className={classes.form} onSubmit={this.signUp}>
-              <Grid container spacing={2}>
-                <Grid item xs={12} sm={6}>
-                  <TextField
-                    autoComplete="fname"
-                    name="firstName"
-                    variant="outlined"
-                    required
-                    fullWidth
-                    id="firstName"
-                    label="First Name"
-                    autoFocus
-                  />
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <TextField
-                    variant="outlined"
-                    required
-                    fullWidth
-                    id="lastName"
-                    label="Last Name"
-                    name="lastName"
-                    autoComplete="lname"
-                  />
-                </Grid>
-                <Grid item xs={12}>
-                  <TextField
-                    variant="outlined"
-                    required
-                    fullWidth
-                    name="age"
-                    label="Age"
-                    type="number"
-                    id="age"
-                    inputProps={{ min: 10, max: 60 }}
-                    autoComplete="current-age"
-                  />
-                </Grid>
-                <Grid item xs={12}>
-                  <TextField
-                    variant="outlined"
-                    required
-                    fullWidth
-                    id="email"
-                    label="Email Address"
-                    name="email"
-                    autoComplete="email"
-                  />
-                </Grid>
-                <Grid item xs={12}>
-                  <TextField
-                    variant="outlined"
-                    required
-                    fullWidth
-                    name="password"
-                    label="Password"
-                    type="password"
-                    id="password"
-                    autoComplete="current-password"
-                  />
-                </Grid>
-              </Grid>
+      <div>
+        <Navbar />
+        <div style={{ marginTop: 50 }}>
+          <Container component="main" maxWidth="xs">
+            <CssBaseline />
+            <div className={classes.paper}>
+              <div style={{ textAlign: "center" }}>
+                <Typography
+                  component="h1"
+                  variant="h5"
+                  style={{ fontSize: 40 }}>
+                  Sign up
+                </Typography>
+              </div>
               <br />
-              <Button
-                type="submit"
-                fullWidth
-                variant="contained"
-                color="primary"
-                className={classes.submit}>
-                Sign Up
-              </Button>
-              <Grid container justify="flex-end">
-                <Grid item>
-                  <br />
-                  <Link href="/login" variant="body2">
-                    Already have an account? Sign in
-                  </Link>
+              <form className={classes.form} onSubmit={this.signUp}>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} sm={6}>
+                    <TextField
+                      autoComplete="fname"
+                      name="firstName"
+                      variant="outlined"
+                      required
+                      fullWidth
+                      id="firstName"
+                      label="First Name"
+                      autoFocus
+                    />
+                  </Grid>
+                  <Grid item xs={12} sm={6}>
+                    <TextField
+                      variant="outlined"
+                      required
+                      fullWidth
+                      id="lastName"
+                      label="Last Name"
+                      name="lastName"
+                      autoComplete="lname"
+                    />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <TextField
+                      variant="outlined"
+                      required
+                      fullWidth
+                      name="age"
+                      label="Age"
+                      type="number"
+                      id="age"
+                      inputProps={{ min: 10, max: 60 }}
+                      autoComplete="current-age"
+                    />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <TextField
+                      variant="outlined"
+                      required
+                      fullWidth
+                      id="email"
+                      label="Email Address"
+                      name="email"
+                      autoComplete="email"
+                    />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <TextField
+                      variant="outlined"
+                      required
+                      fullWidth
+                      name="password"
+                      label="Password"
+                      type="password"
+                      id="password"
+                      autoComplete="current-password"
+                    />
+                  </Grid>
                 </Grid>
-              </Grid>
-            </form>
-          </div>
-          <Box mt={5} />
-        </Container>
+                <br />
+                <Button
+                  type="submit"
+                  fullWidth
+                  variant="contained"
+                  color="primary"
+                  className={classes.submit}>
+                  Sign Up
+                </Button>
+                <Grid container justify="flex-end">
+                  <Grid item>
+                    <br />
+                    <Link href="/login" variant="body2">
+                      Already have an account? Sign in
+                    </Link>
+                  </Grid>
+                </Grid>
+              </form>
+            </div>
+            <Box mt={5} />
+          </Container>
+        </div>
       </div>
     );
   }

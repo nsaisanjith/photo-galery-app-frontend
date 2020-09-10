@@ -1,10 +1,15 @@
 import React from "react";
 import ImageComp from "./ImageComp";
-import { MDBBtn } from "mdbreact";
 import AddImage from "../functional-components/AddImage";
 import axios from "axios";
 import MyProfile from "../functional-components/MyProfile";
 import { withRouter } from "react-router-dom";
+import Fab from "@material-ui/core/Fab";
+import AddIcon from "@material-ui/icons/Add";
+import NavbarImagePage from "./NavbarImagePage";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "mdbreact/dist/css/mdb.css";
 class ImagePageComp extends React.Component {
   constructor(props) {
     super(props);
@@ -96,22 +101,29 @@ class ImagePageComp extends React.Component {
           submit={(e) => this.addImageForm(e)}
           onchange={this.addImageState}
         />
-        <div style={{ textAlign: "center" }}>
-          <MDBBtn color="primary" onClick={this.close}>
-            Add Image
-          </MDBBtn>
-
-          <MDBBtn color="success" onClick={this.myProfileModale}>
-            My Profile
-          </MDBBtn>
-          <MDBBtn
-            style={{ float: "right", marginRight: 20 }}
-            onClick={this.logout}
-            color="warning">
-            Logout
-          </MDBBtn>
-        </div>
+        <NavbarImagePage
+          myProfile={this.myProfileModale}
+          logout={this.logout}
+        />
         <ImageComp />
+        <div
+          style={{ "margin-top": "12%", float: "right", position: "relative" }}>
+          <div>
+            <Fab
+              size="large"
+              color="secondary"
+              aria-label="add"
+              onClick={this.close}
+              style={{
+                position: "fixed",
+                right: 20,
+                bottom: 80,
+                outline: "none",
+              }}>
+              <AddIcon />
+            </Fab>
+          </div>
+        </div>
       </div>
     );
   }

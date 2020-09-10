@@ -13,7 +13,7 @@
 
 .Navbar {
     height: 30px;
-    background-color: #9df9ef;
+    background-color: #2BBBAD;
 
 }
 
@@ -21,6 +21,8 @@
     margin-left: 40px;
     text-decoration: none;
     font-size: 20px;
+    height: 50px;
+    color: #ffff;
 }
 
 .footer {

@@ -1,7 +1,7 @@
 import React from "react";
 import { MDBBtn } from "mdbreact";
 import { Button, Modal } from "react-bootstrap";
-import "@fortawesome/fontawesome-free/css/all.min.scoped.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
 import { Input } from "@material-ui/core";
@@ -10,7 +10,7 @@ export default function AddImage(props) {
     <div>
       <Modal show={props.show} onHide={props.close}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Add Image</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {" "}
