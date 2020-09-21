@@ -62,7 +62,7 @@ class Login extends React.Component {
         email: this.state.email,
         password: this.state.password,
       };
-      const res = await axios.post("http://localhost:3200/users/login", data);
+      const res = await axios.post("https://photo-gallery-deploy.herokuapp.com/users/login", data);
       if (res.status === 200) {
         localStorage.setItem("token", res.data.token);
         localStorage.setItem("user", JSON.stringify(res.data));

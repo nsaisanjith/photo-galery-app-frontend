@@ -6,16 +6,16 @@ import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
 import { Input } from "@material-ui/core";
 export default function AddImage(props) {
+  let form = null;
   return (
     <div>
       <Modal show={props.show} onHide={props.close}>
         <Modal.Header closeButton>
-          <Modal.Title>Add Image</Modal.Title>
+          <Modal.Title>Upload Image</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {" "}
-          <form onSubmit={props.submit}>
-            <p className="h4 text-center mb-4">Add Image</p>
+          <form ref={(ref) => form = ref} onSubmit={props.submit}>
             <div style={{ textAlign: "center" }}>
               <Input
                 type="file"
@@ -46,18 +46,12 @@ export default function AddImage(props) {
               name="message"
               required
             />
-            <div className="text-center mt-4">
-              <MDBBtn color="indigo" type="submit">
-                upload
-              </MDBBtn>
+            <div className={"modal-footer"}>
+              <Button variant="outline-danger" onClick={props.close}>Close</Button>
+              <Button variant="outline-primary" type="submit">Upload</Button>
             </div>
           </form>
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={props.close}>
-            Close
-          </Button>
-        </Modal.Footer>
       </Modal>
     </div>
   );

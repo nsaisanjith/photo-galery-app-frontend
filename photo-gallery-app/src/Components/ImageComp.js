@@ -27,7 +27,7 @@ export class ImageComp extends Component {
   request = async () => {
     const token = localStorage.getItem("token");
     try {
-      const res = await axios.get("http://localhost:3200/images", {
+      const res = await axios.get("https://photo-gallery-deploy.herokuapp.com/images", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -41,7 +41,7 @@ export class ImageComp extends Component {
     try {
       const token = localStorage.getItem("token");
       const res = await axios.delete(
-        "http://localhost:3200/image/delete/" + im._id.toString(),
+        "https://photo-gallery-deploy.herokuapp.com/image/delete/" + im._id.toString(),
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -100,7 +100,7 @@ export class ImageComp extends Component {
       };
       const token = localStorage.getItem("token");
       const res = await axios.patch(
-        "http://localhost:3200/image/update/" +
+        "https://photo-gallery-deploy.herokuapp.com/image/update/" +
           this.state.edit.im._id.toString(),
         data,
         {

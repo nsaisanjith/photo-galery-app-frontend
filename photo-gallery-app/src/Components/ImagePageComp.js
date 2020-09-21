@@ -42,7 +42,7 @@ class ImagePageComp extends React.Component {
       var data = new FormData();
       data.append("text", JSON.stringify(data1));
       data.append("imag", e.target.elements[0].files[0]);
-      const res = await axios.post("http://localhost:3200/image", data, {
+      const res = await axios.post("https://photo-gallery-deploy.herokuapp.com/image", data, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -74,7 +74,7 @@ class ImagePageComp extends React.Component {
   logout = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.post("http://localhost:3200/users/logout", {
+      const res = await axios.post("https://photo-gallery-deploy.herokuapp.com/users/logout", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
