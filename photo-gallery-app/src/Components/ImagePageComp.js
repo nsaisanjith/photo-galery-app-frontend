@@ -89,22 +89,22 @@ class ImagePageComp extends React.Component {
   };
   render() {
     return (
-      <div>
-        <MyProfile
+      <div className="images-container">
+        {/* <MyProfile
           clickm={this.myProfileModale}
           show={this.state.myProfile}
           user={this.state.user}
-        />
+        /> */}
         <AddImage
           close={this.close}
           show={this.state.AddImageForm}
           submit={(e) => this.addImageForm(e)}
           onchange={this.addImageState}
         />
-        <NavbarImagePage
+        {/* <NavbarImagePage
           myProfile={this.myProfileModale}
           logout={this.logout}
-        />
+        /> */}
         <ImageComp />
         <div
           style={{ "margin-top": "12%", float: "right", position: "relative" }}>

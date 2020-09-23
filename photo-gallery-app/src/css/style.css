@@ -1,5 +1,19 @@
-.modal-footer{
-    padding-top: "2%";
-    display: "flex";
-    justify-content: space-around;
+html, body , #root{
+    height: 100%;
+}
+.view {
+    background: url("https://mdbootstrap.com/img/Photos/Others/img (50).jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.into-image-height{
+    height: 600px
+}
+
+.signin-container, .signup-container{
+    height: 79%;
+}
+
+.images-container {
+    min-height: 85%;
 }

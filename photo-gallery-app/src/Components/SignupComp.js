@@ -10,7 +10,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import axios from "axios";
 import { withRouter } from "react-router-dom";
-import Navbar from "./nav";
 class SignupComp extends Component {
   useStyles = makeStyles((theme) => ({
     paper: {
@@ -62,20 +61,15 @@ class SignupComp extends Component {
   render() {
     const classes = this.useStyles;
     return (
-      <div>
-        <Navbar />
-        <div style={{ marginTop: 50 }}>
-          <Container component="main" maxWidth="xs">
+        <div className="signup-container">
+        <Container component="main" maxWidth="xs">
             <CssBaseline />
             <div className={classes.paper}>
-              <div style={{ textAlign: "center" }}>
-                <Typography
-                  component="h1"
-                  variant="h5"
-                  style={{ fontSize: 40 }}>
-                  Sign up
-                </Typography>
-              </div>
+            <div style={{ textAlign: "center", marginTop: 50 }}>
+              <Typography component="h1" variant="h5" style={{ fontSize: 30 }}>
+                Sign up
+              </Typography>
+            </div>
               <br />
               <form className={classes.form} onSubmit={this.signUp}>
                 <Grid container spacing={2}>
@@ -158,10 +152,8 @@ class SignupComp extends Component {
                 </Grid>
               </form>
             </div>
-            <Box mt={5} />
           </Container>
         </div>
-      </div>
     );
   }
 }

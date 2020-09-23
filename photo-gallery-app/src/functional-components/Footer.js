@@ -1,10 +1,15 @@
 import React from "react";
-import classes from "../css/title.module.css";
+import { MDBContainer, MDBFooter } from "mdbreact";
 const Footer = () => {
   return (
-    <div className={classes.footer}>
-      <p>Created By:Sai Sanjith</p>
-    </div>
+    <MDBFooter color="blue" className="font-small mt-4">
+      <div className="footer-copyright text-center py-3">
+        <MDBContainer fluid>
+          Created with &#9829; by Sai Sanjith
+        </MDBContainer>
+      </div>
+    </MDBFooter>
   );
 };
 export default Footer;
+
