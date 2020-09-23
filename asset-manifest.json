@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/photo-galery-app-frontend/static/css/main.85bee614.chunk.css",
-    "main.js": "/photo-galery-app-frontend/static/js/main.a75b4991.chunk.js",
-    "main.js.map": "/photo-galery-app-frontend/static/js/main.a75b4991.chunk.js.map",
+    "main.css": "/photo-galery-app-frontend/static/css/main.48800fec.chunk.css",
+    "main.js": "/photo-galery-app-frontend/static/js/main.8a6500f9.chunk.js",
+    "main.js.map": "/photo-galery-app-frontend/static/js/main.8a6500f9.chunk.js.map",
     "runtime-main.js": "/photo-galery-app-frontend/static/js/runtime-main.9cd6bd90.js",
     "runtime-main.js.map": "/photo-galery-app-frontend/static/js/runtime-main.9cd6bd90.js.map",
     "static/css/2.1b64f27c.chunk.css": "/photo-galery-app-frontend/static/css/2.1b64f27c.chunk.css",
-    "static/js/2.a9fe4b40.chunk.js": "/photo-galery-app-frontend/static/js/2.a9fe4b40.chunk.js",
-    "static/js/2.a9fe4b40.chunk.js.map": "/photo-galery-app-frontend/static/js/2.a9fe4b40.chunk.js.map",
+    "static/js/2.2bf3799e.chunk.js": "/photo-galery-app-frontend/static/js/2.2bf3799e.chunk.js",
+    "static/js/2.2bf3799e.chunk.js.map": "/photo-galery-app-frontend/static/js/2.2bf3799e.chunk.js.map",
     "index.html": "/photo-galery-app-frontend/index.html",
-    "precache-manifest.df0c817b32615d03c0a3493a7c9173bc.js": "/photo-galery-app-frontend/precache-manifest.df0c817b32615d03c0a3493a7c9173bc.js",
+    "precache-manifest.7dfae808406c53521f71d8007518675b.js": "/photo-galery-app-frontend/precache-manifest.7dfae808406c53521f71d8007518675b.js",
     "service-worker.js": "/photo-galery-app-frontend/service-worker.js",
     "static/css/2.1b64f27c.chunk.css.map": "/photo-galery-app-frontend/static/css/2.1b64f27c.chunk.css.map",
-    "static/css/main.85bee614.chunk.css.map": "/photo-galery-app-frontend/static/css/main.85bee614.chunk.css.map",
-    "static/js/2.a9fe4b40.chunk.js.LICENSE.txt": "/photo-galery-app-frontend/static/js/2.a9fe4b40.chunk.js.LICENSE.txt",
+    "static/css/main.48800fec.chunk.css.map": "/photo-galery-app-frontend/static/css/main.48800fec.chunk.css.map",
+    "static/js/2.2bf3799e.chunk.js.LICENSE.txt": "/photo-galery-app-frontend/static/js/2.2bf3799e.chunk.js.LICENSE.txt",
     "static/media/mdb.css": "/photo-galery-app-frontend/static/media/arrow_right.8ef6a08c.svg",
     "static/media/all.min.css": "/photo-galery-app-frontend/static/media/fa-solid-900.ee09ad75.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.9cd6bd90.js",
     "static/css/2.1b64f27c.chunk.css",
-    "static/js/2.a9fe4b40.chunk.js",
-    "static/css/main.85bee614.chunk.css",
-    "static/js/main.a75b4991.chunk.js"
+    "static/js/2.2bf3799e.chunk.js",
+    "static/css/main.48800fec.chunk.css",
+    "static/js/main.8a6500f9.chunk.js"
   ]
 }
