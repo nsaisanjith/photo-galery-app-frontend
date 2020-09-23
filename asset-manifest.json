@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/photo-galery-app-frontend/static/css/main.48800fec.chunk.css",
-    "main.js": "/photo-galery-app-frontend/static/js/main.8a6500f9.chunk.js",
-    "main.js.map": "/photo-galery-app-frontend/static/js/main.8a6500f9.chunk.js.map",
+    "main.js": "/photo-galery-app-frontend/static/js/main.e59a4e26.chunk.js",
+    "main.js.map": "/photo-galery-app-frontend/static/js/main.e59a4e26.chunk.js.map",
     "runtime-main.js": "/photo-galery-app-frontend/static/js/runtime-main.9cd6bd90.js",
     "runtime-main.js.map": "/photo-galery-app-frontend/static/js/runtime-main.9cd6bd90.js.map",
     "static/css/2.1b64f27c.chunk.css": "/photo-galery-app-frontend/static/css/2.1b64f27c.chunk.css",
-    "static/js/2.2bf3799e.chunk.js": "/photo-galery-app-frontend/static/js/2.2bf3799e.chunk.js",
-    "static/js/2.2bf3799e.chunk.js.map": "/photo-galery-app-frontend/static/js/2.2bf3799e.chunk.js.map",
+    "static/js/2.3c01c93f.chunk.js": "/photo-galery-app-frontend/static/js/2.3c01c93f.chunk.js",
+    "static/js/2.3c01c93f.chunk.js.map": "/photo-galery-app-frontend/static/js/2.3c01c93f.chunk.js.map",
     "index.html": "/photo-galery-app-frontend/index.html",
-    "precache-manifest.7dfae808406c53521f71d8007518675b.js": "/photo-galery-app-frontend/precache-manifest.7dfae808406c53521f71d8007518675b.js",
+    "precache-manifest.8eed9d5cd227a0608d09f7ed29bec4fa.js": "/photo-galery-app-frontend/precache-manifest.8eed9d5cd227a0608d09f7ed29bec4fa.js",
     "service-worker.js": "/photo-galery-app-frontend/service-worker.js",
     "static/css/2.1b64f27c.chunk.css.map": "/photo-galery-app-frontend/static/css/2.1b64f27c.chunk.css.map",
     "static/css/main.48800fec.chunk.css.map": "/photo-galery-app-frontend/static/css/main.48800fec.chunk.css.map",
-    "static/js/2.2bf3799e.chunk.js.LICENSE.txt": "/photo-galery-app-frontend/static/js/2.2bf3799e.chunk.js.LICENSE.txt",
+    "static/js/2.3c01c93f.chunk.js.LICENSE.txt": "/photo-galery-app-frontend/static/js/2.3c01c93f.chunk.js.LICENSE.txt",
     "static/media/mdb.css": "/photo-galery-app-frontend/static/media/arrow_right.8ef6a08c.svg",
     "static/media/all.min.css": "/photo-galery-app-frontend/static/media/fa-solid-900.ee09ad75.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.9cd6bd90.js",
     "static/css/2.1b64f27c.chunk.css",
-    "static/js/2.2bf3799e.chunk.js",
+    "static/js/2.3c01c93f.chunk.js",
     "static/css/main.48800fec.chunk.css",
-    "static/js/main.8a6500f9.chunk.js"
+    "static/js/main.e59a4e26.chunk.js"
   ]
 }
