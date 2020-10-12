@@ -1,17 +1,35 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
  MDBIcon } from "mdbreact";
-import { HashRouter as Router } from 'react-router-dom';
+//  import { useLocation } from 'react-router-dom'
 
 const Header = (props) => {
-
+  // const location = useLocation();
   const [ isOpen, setIsOpen ] = useState(false);
-  
+  const [ isLoggedIn, setIsLoggedIn ] = useState(props.isLoggedIn);
+
   const toggleCollapse = () => {
     setIsOpen(!isOpen);
   }
+  
+  useEffect(() => {
+    try{
+      const userLocalStorage = localStorage.getItem("user");
+      const parser = JSON.parse(userLocalStorage)
+      console.log(isLoggedIn, parser.token);
+      setIsLoggedIn(!!parser.token)
+    } catch {
+      setIsLoggedIn(false)
+    }
+  })
 
+  const logoutClick = () => {
+    localStorage.setItem("user", "");
+    setIsLoggedIn(false)
+    toggleCollapse()
+  }
   return (
+
     <MDBNavbar color="info-color" dark expand="md">
       <MDBNavbarBrand>
         <strong className="white-text">Photo Gallery</strong>
@@ -19,12 +37,23 @@ const Header = (props) => {
       <MDBNavbarToggler onClick={toggleCollapse} />
       <MDBCollapse id="navbarCollapse3" isOpen={isOpen} navbar>
         <MDBNavbarNav right>
-          <MDBNavItem>
+        {!isLoggedIn ? (
+          <MDBNavItem onClick={toggleCollapse}>
             <MDBNavLink to="/login"><MDBIcon icon="fas fa-sign-in-alt" /> login</MDBNavLink>
           </MDBNavItem>
-          <MDBNavItem>
-            <MDBNavLink to="/login"><MDBIcon icon="fas fa-sign-out-alt" /> logout</MDBNavLink>
-          </MDBNavItem>
+        ) : (
+          <>
+            <MDBNavItem onClick={logoutClick}>
+              <MDBNavLink to="/login"><MDBIcon icon="fas fa-sign-out-alt" /> logout</MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem onClick={()=> {
+              props.showProfile()
+              toggleCollapse()
+            }}>
+              <MDBNavLink to="#"><MDBIcon icon="fas fa-user-alt" /> Profile</MDBNavLink>
+            </MDBNavItem>
+          </>
+        )}
         </MDBNavbarNav>
       </MDBCollapse>
     </MDBNavbar>

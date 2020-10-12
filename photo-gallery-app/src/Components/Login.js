@@ -65,6 +65,7 @@ class Login extends React.Component {
       if (res.status === 200) {
         localStorage.setItem("token", res.data.token);
         localStorage.setItem("user", JSON.stringify(res.data));
+        this.props.handleLoggedin()
         this.props.history.push("/image");
       }
     } catch (error) {

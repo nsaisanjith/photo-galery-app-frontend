@@ -24,6 +24,7 @@ class ImagePageComp extends React.Component {
     image: undefined,
     myProfile: false,
     user: JSON.parse(localStorage.getItem("user")),
+    showProfile: this.props.showProfile
   };
   addImageForm = async (e) => {
     e.preventDefault();
@@ -90,11 +91,11 @@ class ImagePageComp extends React.Component {
   render() {
     return (
       <div className="images-container">
-        {/* <MyProfile
-          clickm={this.myProfileModale}
-          show={this.state.myProfile}
+        <MyProfile
+          clickm={() => this.props.handleShowProfile()}
+          show={this.props.showProfile}
           user={this.state.user}
-        /> */}
+        />
         <AddImage
           close={this.close}
           show={this.state.AddImageForm}
