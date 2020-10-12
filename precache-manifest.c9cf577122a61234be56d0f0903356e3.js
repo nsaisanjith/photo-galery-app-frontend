@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e8fc69aaaa442c866f7248befc9acdb7",
+    "revision": "a706d41d305bcc01dd0b37df7e6da0bc",
     "url": "/photo-galery-app-frontend/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/photo-galery-app-frontend/static/css/2.1b64f27c.chunk.css"
   },
   {
-    "revision": "2d10cdbe8e7329624b18",
+    "revision": "d4d3076052a421769118",
     "url": "/photo-galery-app-frontend/static/css/main.48800fec.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/photo-galery-app-frontend/static/js/2.c9da0d4b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2d10cdbe8e7329624b18",
-    "url": "/photo-galery-app-frontend/static/js/main.3474ef70.chunk.js"
+    "revision": "d4d3076052a421769118",
+    "url": "/photo-galery-app-frontend/static/js/main.0ff15d26.chunk.js"
   },
   {
     "revision": "3256c8dda080c44cf9d6",
