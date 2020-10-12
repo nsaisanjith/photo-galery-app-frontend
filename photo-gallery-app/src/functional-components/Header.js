@@ -44,7 +44,7 @@ const Header = (props) => {
         ) : (
           <>
             <MDBNavItem onClick={logoutClick}>
-              <MDBNavLink to="/login"><MDBIcon icon="fas fa-sign-out-alt" /> logout</MDBNavLink>
+              <MDBNavLink to="/"><MDBIcon icon="fas fa-sign-out-alt" /> logout</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem onClick={()=> {
               props.showProfile()
