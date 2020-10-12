@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "82527478075682e073a98afc45efe4df",
+    "revision": "fa02bcd44d8b4de60be02b6b26daa2fd",
     "url": "/photo-galery-app-frontend/index.html"
   },
   {
-    "revision": "5855cf6f2d1086b99dd2",
+    "revision": "d3a9cff55aaf02153a7e",
     "url": "/photo-galery-app-frontend/static/css/2.1b64f27c.chunk.css"
   },
   {
-    "revision": "7ecb7a300ceaa898f8b6",
+    "revision": "9d6a94d274071eeb2510",
     "url": "/photo-galery-app-frontend/static/css/main.48800fec.chunk.css"
   },
   {
-    "revision": "5855cf6f2d1086b99dd2",
-    "url": "/photo-galery-app-frontend/static/js/2.3c01c93f.chunk.js"
+    "revision": "d3a9cff55aaf02153a7e",
+    "url": "/photo-galery-app-frontend/static/js/2.c9da0d4b.chunk.js"
   },
   {
     "revision": "a0d5a0381e2f4d8fed1a738846106adf",
-    "url": "/photo-galery-app-frontend/static/js/2.3c01c93f.chunk.js.LICENSE.txt"
+    "url": "/photo-galery-app-frontend/static/js/2.c9da0d4b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7ecb7a300ceaa898f8b6",
-    "url": "/photo-galery-app-frontend/static/js/main.e59a4e26.chunk.js"
+    "revision": "9d6a94d274071eeb2510",
+    "url": "/photo-galery-app-frontend/static/js/main.a8545fcd.chunk.js"
   },
   {
     "revision": "3256c8dda080c44cf9d6",
